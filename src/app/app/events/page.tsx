@@ -339,14 +339,7 @@ function EventsContent() {
       {/* Header */}
       <section className="flex flex-col gap-5 rounded-2xl border border-slate-200 bg-white p-5 shadow-card sm:flex-row sm:items-center sm:justify-between lg:p-6">
         <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <h1 className="text-2xl font-black tracking-tight text-slate-900">Gestión de eventos</h1>
-            {!loading && (
-              <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-bold text-slate-600">
-                {total} {total === 1 ? 'evento' : 'eventos'}
-              </span>
-            )}
-          </div>
+          <h1 className="text-2xl font-black tracking-tight text-slate-900">Gestión de eventos</h1>
           <p className="mt-1 text-sm text-slate-500">
             Consulta y administra el catálogo de eventos de la compañía.
           </p>

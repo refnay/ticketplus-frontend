@@ -118,10 +118,12 @@ export default function CompanySettingsPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-black tracking-tight text-slate-900">Compañía</h1>
-        <p className="mt-1 text-xs text-slate-500">Administra la identidad, información fiscal y configuración comercial de la compañía activa.</p>
-      </div>
+      <header className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card lg:p-6">
+        <div>
+          <h1 className="text-2xl font-black tracking-tight text-slate-900">Compañía</h1>
+          <p className="mt-1 max-w-2xl text-sm text-slate-500">Administra la identidad, información fiscal y configuración comercial de la compañía activa.</p>
+        </div>
+      </header>
 
       <form onSubmit={handleSave} className="space-y-6">
         <Card header={<div className="flex items-center gap-2"><Building2 className="h-4 w-4 text-brand-600" /><h2 className="text-sm font-bold text-slate-900">Identidad y contacto</h2></div>}>

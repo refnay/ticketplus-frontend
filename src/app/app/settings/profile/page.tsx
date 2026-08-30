@@ -123,10 +123,12 @@ export default function ProfileSettingsPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-black tracking-tight text-slate-900">Perfil</h1>
-        <p className="mt-1 text-xs text-slate-500">Administra tus datos personales y credenciales de acceso.</p>
-      </div>
+      <header className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card lg:p-6">
+        <div>
+          <h1 className="text-2xl font-black tracking-tight text-slate-900">Perfil</h1>
+          <p className="mt-1 max-w-2xl text-sm text-slate-500">Administra tus datos personales y credenciales de acceso.</p>
+        </div>
+      </header>
 
       <Card header={<div className="flex items-center gap-2"><UserRound className="h-4 w-4 text-brand-600" /><h2 className="text-sm font-bold text-slate-900">Información personal</h2></div>}>
         <form onSubmit={handleSaveProfile} className="space-y-5">
